@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#858584">
+
+  <title>FOZ DTX FORMAT</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1> FOZ DTX FORMAT</h1>
+  <center>
+    <textarea name="" id="txt" cols="30" rows="10"></textarea><br>
+    <button onclick="con()">Convert Format</button>
+    <button onclick="con2()">Convert text</button>
+    <textarea name="" id="t" cols="30" rows="10"></textarea>
+    
+  </center>
+  <!-- Project -->
+  <script src="main.js"></script>
+  <script>
+    function con(){
+  var text = document.getElementById("txt").value;
+  
+  var gets = FOZ_DTX_CREATE_FORMAT.format_to_text(text);
+  
+  document.getElementById("t").innerHTML = gets;
+}
+
+
+function con2() {
+  var text = document.getElementById("txt").value;
+
+  var gets = FOZ_DTX_CREATE_FORMAT.text_to_format(text);
+
+  document.getElementById("t").innerHTML = gets;
+} 
+  </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#858584">
+
+  <title>FOZ DTX FORMAT (LEARN)</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1> FOZ DTX FORMAT LEARN</h1>
+  <center>
+    <br>
+    Copy this code and paste in your html document and full tutorial <br><br>
+    <textarea name="" id="txt" cols="30" rows="10">
+      <script src="https://fozdtx.github.io/format/main.js"></script>
+    </textarea><br>
+    <button onclick="con()">Watch tutorial</button>
+    
+  </center>
+  <br><br>
+  <h6 onclick="window.open('tut.html')">
+    Learn
+  </h6>
+  <!-- Project -->
+  <script src="main.js"></script>
+  <script>
+    function con(){
+  var text = document.getElementById("txt").value;
+  
+  var gets = FOZ_DTX_CREATE_FORMAT.format_to_text(text);
+  
+  document.getElementById("t").innerHTML = gets;
+}
+
+
+function con2() {
+  var text = document.getElementById("txt").value;
+
+  var gets = FOZ_DTX_CREATE_FORMAT.text_to_format(text);
+
+  document.getElementById("t").innerHTML = gets;
+} 
+  </script>
+</body>
+</html>
